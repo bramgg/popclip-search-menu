@@ -23,7 +23,7 @@ submenu:
     icon: symbol:bag
     javascript: const b=popclip.options.browser; popclip.openUrl('https://www.google.com/search?udm=3&q='+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})
   - title: AliExpress
-    icon: iconify:simple-icons:aliexpress
+    icon: ae.png
     javascript: const b=popclip.options.browser; popclip.openUrl('https://www.aliexpress.com/w/wholesale-'+encodeURIComponent(popclip.input.text.trim())+'.html', b?{app:b}:{})
   - title: YouTube
     icon: iconify:simple-icons:youtube
