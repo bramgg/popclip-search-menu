@@ -1,0 +1,36 @@
+name: Search Menu
+identifier: nl.bramg.popclip.search-menu
+description: Search the selected text on several sites, from one menu.
+popclip version: 5992   # submenu support
+icon: symbol:magnifyingglass
+options:
+  - identifier: browser
+    label: Browser
+    type: string
+    defaultValue: ''
+    description: Bundle identifier of the browser to open, e.g. com.google.Chrome. Leave empty to use your default browser.
+submenu:
+  - title: Google
+    icon: iconify:simple-icons:google
+    javascript: const b=popclip.options.browser; popclip.openUrl('https://www.google.com/search?q='+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})
+  - title: Reddit
+    icon: iconify:simple-icons:reddit
+    javascript: const b=popclip.options.browser; popclip.openUrl('https://www.reddit.com/search/?q='+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})
+  - title: Amazon
+    icon: iconify:simple-icons:amazon
+    javascript: const b=popclip.options.browser; popclip.openUrl('https://www.amazon.com/s?k='+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})
+  - title: Google Shopping
+    icon: symbol:bag
+    javascript: const b=popclip.options.browser; popclip.openUrl('https://www.google.com/search?udm=3&q='+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})
+  - title: AliExpress
+    icon: iconify:simple-icons:aliexpress
+    javascript: const b=popclip.options.browser; popclip.openUrl('https://www.aliexpress.com/w/wholesale-'+encodeURIComponent(popclip.input.text.trim())+'.html', b?{app:b}:{})
+  - title: YouTube
+    icon: iconify:simple-icons:youtube
+    javascript: const b=popclip.options.browser; popclip.openUrl('https://www.youtube.com/results?search_query='+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})
+  - title: Maps
+    icon: iconify:simple-icons:googlemaps
+    javascript: const b=popclip.options.browser; popclip.openUrl('https://www.google.com/maps/place/'+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})
+  - title: Facebook
+    icon: iconify:simple-icons:facebook
+    javascript: const b=popclip.options.browser; popclip.openUrl('https://www.facebook.com/search/top/?q='+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})
