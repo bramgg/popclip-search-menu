@@ -1,13 +1,14 @@
-# Search Menu — a PopClip extension
+# Search — a PopClip extension
 
 Search the selected text on several sites, from one button.
 
-Select text in any app, click **Search Menu** in the PopClip bar, and pick a site. The
+Select text in any app, click **Search** in the PopClip bar, and pick a site. The
 selection is URL-encoded and opened as a search on that site — in your default browser, or
 in a specific browser you name. Because the sites sit in a submenu, eight engines take up
 one button in the bar instead of eight.
 
-Included: Google, Reddit, Amazon, Google Shopping, AliExpress, YouTube, Maps, Facebook.
+Included: Google, Reddit, WhatsApp, Amazon, Google Shopping, AliExpress, YouTube, Maps, Facebook
+(not a search: it opens the WhatsApp app with the selection as a draft message, you pick the chat).
 
 ## Browser
 
@@ -18,7 +19,7 @@ Finicky and you want searches to bypass that routing.
 
 ## Making it your own
 
-Every entry in `source/Search Menu.popclipext/Config.yaml` is three lines: a title, an icon
+Every entry in `source/Search.popclipext/Config.yaml` is three lines: a title, an icon
 and one line of JavaScript holding the search URL. Copy an entry, change the URL, and put
 the selection where `encodeURIComponent(...)` sits.
 
