@@ -16,9 +16,6 @@ submenu:
   - title: Reddit
     icon: iconify:simple-icons:reddit
     javascript: const b=popclip.options.browser; popclip.openUrl('https://www.reddit.com/search/?q='+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})
-  - title: WhatsApp
-    icon: iconify:simple-icons:whatsapp
-    javascript: popclip.openUrl('whatsapp://send?text='+encodeURIComponent(popclip.input.text.trim()))
   - title: Amazon
     icon: iconify:simple-icons:amazon
     javascript: const b=popclip.options.browser; popclip.openUrl('https://www.amazon.com/s?k='+encodeURIComponent(popclip.input.text.trim()), b?{app:b}:{})

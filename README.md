@@ -7,8 +7,7 @@ selection is URL-encoded and opened as a search on that site — in your default
 in a specific browser you name. Because the sites sit in a submenu, eight engines take up
 one button in the bar instead of eight.
 
-Included: Google, Reddit, WhatsApp, Amazon, Google Shopping, AliExpress, YouTube, Maps, Facebook
-(not a search: it opens the WhatsApp app with the selection as a draft message, you pick the chat).
+Included: Google, Reddit, Amazon, Google Shopping, AliExpress, YouTube, Maps, Facebook.
 
 ## Browser
 
